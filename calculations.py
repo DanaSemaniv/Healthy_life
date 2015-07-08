@@ -8,7 +8,6 @@ def getIdealWeightLorentz(height):
 
 def getBMI(height, weight):
     '''
-
     :param height: зріст
     :param weight: вага
     :return: індекс маси тіла
