@@ -36,7 +36,6 @@ def button_recomendatin_training_clicked():
 
 root=Tk()
 root.title("Healthy_life")
-#root.state("zoomed")
 root.geometry('380x300+300+200')
 
 label_height = Label(root,height=1,width=15,font='Arial 10', text = "Enter your height" )
