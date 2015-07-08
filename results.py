@@ -16,7 +16,7 @@ def checkWeight(weight, height):
         out = "0"
     else:
         out = "1"
-    return "Lorentz formula: " + recommendations.getWeightRecommendations(out)
+    return "Lorentz formula: " + recommendations.getWeightRecommendationsLorentz(out)
 
 
 def checkBMI(weight, height):

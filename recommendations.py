@@ -1,21 +1,21 @@
-def getWeightRecommendations(result):
+def getWeightRecommendationsLorentz(result):
     """
     :param result: результат порівняння заданої ваги з ідеальною вагою
     :return: вага у порівнянні з ідеалом
     """
-    recomm = {
+    recommendations = {
         "-1": "Your weight below the ideal",
         "0": "Your weight is ideal",
         "1": "Your weight above the ideal"
     }
-    return recomm[result]
+    return recommendations[result]
 
 def getBMIRecommendations(bmi):
     '''
     :param bmi: значення BMI
     :return: стан здоров'я і рекомендації
     '''
-    recomm = {
+    recommendations = {
         "-2": "Anorexia. Recommended weight gain.",
         "-1": "Deficiency of body weight.",
         "0": "Normal",
@@ -25,4 +25,7 @@ def getBMIRecommendations(bmi):
         "4": "Obesity III degree. It is highly recommended weight loss.",
         "5": "Obesity IV degree. Need immediate weight loss."
     }
-    return recomm[bmi]
+    return recommendations[bmi]
+
+def getWeightRecommendationsNagler(result):
+    pass
