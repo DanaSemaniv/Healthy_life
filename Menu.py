@@ -16,13 +16,13 @@ def button_clicked():
          text_weight.delete(0.0,END)
          text_weight.insert(0.0,0.0)
      if input_height > 0:
-         perfect_weight = calculations.getIdealWeightLorentz(input_height)
+         perfect_weight = calculations.get_ideal_weight_lorentz(input_height)
          text_perfect_weight.delete(1.0, END)
          text_perfect_weight.insert(END, perfect_weight)
      else:
          print ("Please input your weight")
      if (input_height > 0) & (input_weight > 0):
-         bmi = calculations.getBMI(input_height, input_weight)
+         bmi = calculations.get_bmi(input_height, input_weight)
          text_BMI.delete(1.0,END)
          text_BMI.insert(END, bmi)
      else:
