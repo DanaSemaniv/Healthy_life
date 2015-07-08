@@ -8,7 +8,7 @@ def checkWeight(weight, height):
     :return: 0, якщо вага ідеальна; 1, якщо більша ідеальної;
              -1, якщо менша ідеальної
     '''
-    if calculations.getIdealWeightLorentz(height) < weight:
+    if calculations.getIdealWeightLorentz(height) > weight:
         return -1
     elif calculations.getIdealWeightLorentz(height) == weight:
         return 0
