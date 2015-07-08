@@ -16,7 +16,7 @@ def checkWeight(weight, height):
         out = "0"
     else:
         out = "1"
-    return recommendations.getWeightRecommendations(out)
+    return "Lorentz formula: " + recommendations.getWeightRecommendations(out)
 
 
 def checkBMI(weight, height):
@@ -43,5 +43,5 @@ def checkBMI(weight, height):
         out = "4"
     else:
         out = "5"
-    return recommendations.getBMIRecommendations(out)
+    return "Body mass index: " + recommendations.getBMIRecommendations(out)
 
