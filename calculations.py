@@ -19,6 +19,18 @@ def getBMI(height, weight):
     return bmi
 
 
+def getIdealWeightNagler(height):
+    '''
+    :param height: зріст
+    :return: ідеальна вага за Наглером
+    '''
+    mass = 45
+    height = isHeightInСentimetres(height)
+    difference = height - 152.4
+    mass += difference/2.45 * 0.9
+    mass += mass * 0.1
+    return mass
+
 def isHeightInСentimetres(height):
     '''
     :param height: зріст
