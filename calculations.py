@@ -1,7 +1,7 @@
 def getIdealWeightLorentz(height):
     """
-    :param height: ????? ??????
-    :return: ???????? ???? ??? ??????? ??????
+    :param height: зріст
+    :return: ідеальна вага для заданого зросту
     """
     weight = (height - 100) - (height - 150)/2
     return weight
@@ -9,9 +9,9 @@ def getIdealWeightLorentz(height):
 def getBMI(height, weight):
     '''
 
-    :param height: ?????
-    :param weight: ????
-    :return: ?????? ???? ????
+    :param height: зріст
+    :param weight: вага
+    :return: індекс маси тіла
     '''
     height_in_meters = height / 100
     bmi = weight / height_in_meters ** 2
