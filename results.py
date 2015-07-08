@@ -15,7 +15,6 @@ def checkWeight(weight, height):
     return 1
 
 
-
 def checkBMI(weight, height):
     '''
     :param weight: вага
