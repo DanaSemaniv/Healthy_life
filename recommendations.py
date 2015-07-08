@@ -1,4 +1,4 @@
-def getWeightRecommendationsLorentz(result):
+def get_weight_recommendations(result):
     """
     :param result: результат порівняння заданої ваги з ідеальною вагою
     :return: вага у порівнянні з ідеалом
@@ -10,7 +10,7 @@ def getWeightRecommendationsLorentz(result):
     }
     return recommendations[result]
 
-def getBMIRecommendations(bmi):
+def get_bmi_recommendations(bmi):
     '''
     :param bmi: значення BMI
     :return: стан здоров'я і рекомендації
@@ -27,5 +27,3 @@ def getBMIRecommendations(bmi):
     }
     return recommendations[bmi]
 
-def getWeightRecommendationsNagler(result):
-    pass
