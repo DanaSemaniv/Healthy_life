@@ -1,5 +1,6 @@
 import calculations
 import recommendations
+import levitsky_table
 
 
 def check_weight_lorentz(weight, height):
@@ -61,3 +62,23 @@ def check_weight_nagler(weight, height):
     else:
         out = "1"
     return "Nagler formula: " + recommendations.get_weight_recommendations(out)
+
+def check_weight_levitsky(height, weight, age, sex):
+    '''
+    :param height: зріст
+    :param weight: вага
+    :param age: вік
+    :param sex: стать
+    :return: 0, якщо вага максимальна; 1, якщо більша максимальної;
+             -1, якщо менша максимальної
+    '''
+    out = ""
+    height = calculations.is_heightIn_centimetres(height)
+    if levitsky_table.get_maximum_weight(sex, height, age) > weight:
+        out = "-1"
+    elif levitsky_table.get_maximum_weight(sex, height, age) == weight:
+        out = "0"
+    else:
+        out = "1"
+    return "According to the Levitsky table your weight is " + \
+           recommendations.compare_with_max(out)

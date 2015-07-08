@@ -27,3 +27,14 @@ def get_bmi_recommendations(bmi):
     }
     return recommendations[bmi]
 
+def compare_with_max(result):
+    '''
+    :param result: результат порівнянн з максимальною можливою вагою
+    :return:вага у порівнянні з максимальною допустимою
+    '''
+    recommendations = {
+        "-1": "below the maximum",
+        "0": "maximum",
+        "1": "above the maximum"
+    }
+    return recommendations[result]

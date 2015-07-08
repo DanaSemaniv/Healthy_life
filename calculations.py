@@ -31,6 +31,7 @@ def get_ideal_weight_nagler(height):
     mass += mass * 0.1
     return mass
 
+
 def is_heightIn_centimetres(height):
     '''
     :param height: зріст
@@ -39,3 +40,4 @@ def is_heightIn_centimetres(height):
     if height < 10:
         return height * 100
     return height
+
