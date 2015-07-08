@@ -1,4 +1,5 @@
 import calculations
+import recommendations
 
 
 def checkWeight(weight, height):
@@ -8,11 +9,14 @@ def checkWeight(weight, height):
     :return: 0, якщо вага ідеальна; 1, якщо більша ідеальної;
              -1, якщо менша ідеальної
     '''
+    out = ""
     if calculations.getIdealWeightLorentz(height) > weight:
-        return -1
+        out = "-1"
     elif calculations.getIdealWeightLorentz(height) == weight:
-        return 0
-    return 1
+        out = "0"
+    else:
+        out = "1"
+    return recommendations.getWeightRecommendations(out)
 
 
 def checkBMI(weight, height):
@@ -22,19 +26,22 @@ def checkBMI(weight, height):
     :return: стан здоров'я від -2 до 5, де 5 -- ожиріння
     '''
     result = calculations.getBMI(height, weight)
+    out = ""
     if result < 17.5:
-        return -2
+        out = "-2"
     elif result < 19.5:
-        return -1
+        out = "-1"
     elif result < 22.9:
-        return 0
+        out = "0"
     elif result < 27.4:
-        return 1
+        out = "1"
     elif result < 30:
-        return 2
+        out = "2"
     elif result < 35:
-        return 3
+        out = "3"
     elif result < 40:
-        return 4
-    return 5
+        out = "4"
+    else:
+        out = "5"
+    return recommendations.getBMIRecommendations(out)
 
