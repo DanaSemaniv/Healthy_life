@@ -1,6 +1,8 @@
 from tkinter import *
 import calculations
 import recommendations
+import authorization
+import registration
 
 def button_clicked():
      input_weight = text_weight.get(index1=1.0, index2=END)
@@ -33,6 +35,9 @@ def button_recomendatin_ration_clicked():
 
 def button_recomendatin_training_clicked():
     print (u"Recomendation_training!")
+
+def exit_(event):
+     root.destroy()
 
 root=Tk()
 root.title("Healthy_life")
@@ -91,4 +96,13 @@ button_recomendatin_training = Button(root,height = 1, width = 8, bg="#5CACEE", 
 button_recomendatin_training.pack()
 button_recomendatin_training.place(relx = 0.7, rely = 0.55)
 
+button_registration = Button(root,height = 1, width = 12, bg="#00FA9A", text=u"Registration", command=registration.button_registration_clicked)
+button_registration.pack()
+button_registration.place(relx = 0.1, rely = 0.75)
+
+button_authorization= Button(root,height = 1, width = 12, bg="#BDB76B", text=u"Authorization", command=authorization.button_authorization_clicked)
+button_authorization.pack()
+button_authorization.place(relx = 0.5, rely = 0.75)
+
+root.bind('<Escape>', exit_)
 root.mainloop()
