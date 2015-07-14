@@ -1,7 +1,7 @@
 from tkinter import *
 import calculations
 import recommendations
-import authorithation
+import authorization
 import registration
 
 def button_clicked():
@@ -100,7 +100,7 @@ button_registration = Button(root,height = 1, width = 12, bg="#00FA9A", text=u"R
 button_registration.pack()
 button_registration.place(relx = 0.1, rely = 0.75)
 
-button_authorization= Button(root,height = 1, width = 12, bg="#BDB76B", text=u"Authorization", command=authorithation.button_authorization_clicked)
+button_authorization= Button(root,height = 1, width = 12, bg="#BDB76B", text=u"Authorization", command=authorization.button_authorization_clicked)
 button_authorization.pack()
 button_authorization.place(relx = 0.5, rely = 0.75)
 
