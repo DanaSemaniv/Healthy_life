@@ -5,3 +5,4 @@ def button_authorization_clicked():
     top_authorization = Toplevel()
     top_authorization.title("authorization")
     top_authorization.mainloop()
+    top_authorization.mainloop()
