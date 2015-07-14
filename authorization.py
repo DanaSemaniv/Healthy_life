@@ -21,7 +21,7 @@ def button_authorization_clicked():
     text_pass.pack()
     text_pass.place(relx=0.20, rely=0.51)
 
-    button_authorization=Button(top_authorization, bg="#AFEEEE", bd=0, text=u"Authorization")
+    button_authorization = Button(top_authorization, bg="#AFEEEE", bd=0, text=u"Authorization")
     button_authorization.pack()
     button_authorization.place(relx=0.26, rely=0.70)
 
