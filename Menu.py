@@ -104,5 +104,6 @@ button_authorization= Button(root,height = 1, width = 12, bg="#BDB76B", text=u"A
 button_authorization.pack()
 button_authorization.place(relx = 0.5, rely = 0.75)
 
+
 root.bind('<Escape>', exit_)
 root.mainloop()
