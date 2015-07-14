@@ -107,3 +107,4 @@ button_authorization.place(relx = 0.5, rely = 0.75)
 
 root.bind('<Escape>', exit_)
 root.mainloop()
+
